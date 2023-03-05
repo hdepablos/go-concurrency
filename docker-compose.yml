@@ -1,0 +1,16 @@
+version: "3.9"
+services:
+  app:
+    platform: linux/amd64
+    container_name: go-concurrency
+    build:
+      dockerfile: Dockerfile
+      context: ./tools/staging/
+      target: dev
+    volumes:
+      - .:/app
+    ports:
+      - "3003:3000"
+networks:
+  default:
+    name: nginx-proxy
