@@ -10,7 +10,7 @@ func main() {
 	/*
 		****************************************************************
 			Concurrency golang
-				1.- Básica: branch basica
+				1.- Básica: branch feature/concurrency-basic
 					Concurrencia básica:
 		****************************************************************
 	*/
